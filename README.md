@@ -1,5 +1,5 @@
 # Hand-Guiding-IR-ExtendedWorkspaces
-This dataset refers to the paper titled "Enabling Manual Guidance in High-Payload Industrial Robots for Flexible Manufacturing Applications in Large Workspaces" published on MDPI Machines journal. It contains the research material developed to implement manual guidance on both the 6DoF KUKA robot (KRC4 controller + Robot Sensor Interface package) and the 1DoF servoactuated linear robotic axis (Beckhoff PC, AX8118 Drive, AM8052 servomotor).
+This dataset refers to the paper titled "Enabling Manual Guidance in High-Payload Industrial Robots for Flexible Manufacturing Applications in Large Workspaces" published on MDPI Machines journal (https://doi.org/10.3390/machines13111016). It contains the research material developed to implement manual guidance on both the 6DoF KUKA robot (KRC4 controller + Robot Sensor Interface package) and the 1DoF servoactuated linear robotic axis (Beckhoff PC, AX8118 Drive, AM8052 servomotor).
 
 ## 📂 Repository structure:
 
