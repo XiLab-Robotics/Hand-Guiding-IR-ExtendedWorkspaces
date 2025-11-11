@@ -1,0 +1,1667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rSIModel dslVersion="1.0.0.0" name="" xmlns="http://schemas.microsoft.com/dsltools/RSIVisual">
+  <comments>
+    <comment Id="7e4f814b-d4ed-4d94-942a-762a85db7286" text="Tx">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN1" />
+      </subjects>
+    </comment>
+    <comment Id="5892deb7-904d-41b9-a5a6-6094adc4f472" text="Ty">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN2" />
+      </subjects>
+    </comment>
+    <comment Id="1138bff7-0ee4-4796-8c0c-3f49edd1abb7" text="Tz">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN3" />
+      </subjects>
+    </comment>
+    <comment Id="1a4317ea-cb2d-4b4e-a4af-d466961141e2" text="-Tx_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA1" />
+      </subjects>
+    </comment>
+    <comment Id="b4b5be81-a6d0-4fd6-a8a8-2d6e9d867afd" text="-Ty_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA2" />
+      </subjects>
+    </comment>
+    <comment Id="bff064ee-d738-4046-81e6-372211b0f76c" text="-Tz_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA3" />
+      </subjects>
+    </comment>
+    <comment Id="4a87f1fd-da99-4ec1-9b6c-710bc8b234ce" text="Xcg">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA4" />
+      </subjects>
+    </comment>
+    <comment Id="6381f0cb-4056-44c5-a260-92f8d384876a" text="Ycg">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA5" />
+      </subjects>
+    </comment>
+    <comment Id="457b13ba-b213-4ef6-9609-c4ac59ae8174" text="Zcg">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA6" />
+      </subjects>
+    </comment>
+    <comment Id="fb773f60-e54c-48b7-949e-943956da0b05" text="ToolMass*g">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA7" />
+      </subjects>
+    </comment>
+    <comment Id="e7aa408a-0d66-4d2f-a3ce-988ae3a1dfae" text="Divisione per 1000 e filtro cutOff a 5Hz">
+      <subjects>
+        <rSIElementMoniker name="//PT13" />
+        <rSIElementMoniker name="//PT12" />
+        <rSIElementMoniker name="//PT11" />
+      </subjects>
+    </comment>
+    <comment Id="4741ee0b-6e2f-4faa-98f2-3e1d3de2f634" text="Segnale per correzione di A (a partire da Tz)">
+      <subjects>
+        <rSIElementMoniker name="//SUM6" />
+      </subjects>
+    </comment>
+    <comment Id="71ea6839-2a8f-44db-b5c5-ec2e3d446961" text="Segnale per correzione di B (a partire da Ty)">
+      <subjects>
+        <rSIElementMoniker name="//SUM5" />
+      </subjects>
+    </comment>
+    <comment Id="a3916b3c-88c2-4810-8f81-a82b1930b2e2" text="Segnale per correzione di C (a partire da Tx)">
+      <subjects>
+        <rSIElementMoniker name="//SUM4" />
+      </subjects>
+    </comment>
+    <comment Id="6b012bf7-1827-4baa-b32e-cf07dd0a7da6" text="Segnale = 0">
+      <subjects>
+        <rSIElementMoniker name="//SOURCE1" />
+      </subjects>
+    </comment>
+    <comment Id="30ab6127-c3a6-49dc-99bd-df7a86d2e1e3" text="Timer di 2 secondi per avvio correzione">
+      <subjects>
+        <rSIElementMoniker name="//TIMER1" />
+      </subjects>
+    </comment>
+    <comment Id="4613af64-dc9b-438b-b117-c96837a3db15" text="Px, Py, Pz - Tool RF">
+      <subjects>
+        <rSIElementMoniker name="//TRAFO_ROBFRAME1" />
+      </subjects>
+    </comment>
+    <comment Id="86ade6a0-d165-4da9-b69f-70eaea9c895d" text="-Zcg*Py+Ycg*Pz">
+      <subjects>
+        <rSIElementMoniker name="//SUM3" />
+      </subjects>
+    </comment>
+    <comment Id="cacb21c6-4caf-44bb-8a5c-c30949f8e74e" text="Zcg*Px-Xcg*Pz">
+      <subjects>
+        <rSIElementMoniker name="//SUM1" />
+      </subjects>
+    </comment>
+    <comment Id="e54411a5-e0a7-4357-988d-03d6eb058813" text="-Ycg*Px+Xcg*Py">
+      <subjects>
+        <rSIElementMoniker name="//SUM2" />
+      </subjects>
+    </comment>
+    <comment Id="ba03bc03-f954-4e32-9f26-5753ef931fd7" text="Fx">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN4" />
+      </subjects>
+    </comment>
+    <comment Id="64a8885f-05fe-49ce-9872-d44ee3ce855d" text="Fy">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN5" />
+      </subjects>
+    </comment>
+    <comment Id="1a113081-f268-4be7-baa2-28ae3f1b177a" text="-Fz">
+      <subjects>
+        <rSIElementMoniker name="//DIGIN6" />
+      </subjects>
+    </comment>
+    <comment Id="4505a55f-9d98-44d8-89ff-4be86456173f" text="-Fx_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA8" />
+      </subjects>
+    </comment>
+    <comment Id="796a9e8c-9cc3-44d6-89e2-856cd7b3d11e" text="-Fy_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA9" />
+      </subjects>
+    </comment>
+    <comment Id="891dc28f-93a0-4cac-9609-f92c6291a355" text="-Fz_0">
+      <subjects>
+        <rSIElementMoniker name="//SEN_PREA10" />
+      </subjects>
+    </comment>
+  </comments>
+  <rSIObjects>
+    <rSIElement name="DIGIN1" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="77" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="DIGIN2" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="81" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="DIGIN3" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="85" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA1" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="4" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA2" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="5" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA3" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="6" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA4" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="8" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA5" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="9" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA6" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="10" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA7" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="7" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT11" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT12" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN2/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT13" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN3/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MULTI5" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out3" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="P7" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM3/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MULTI8" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA6/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="P8" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MULTI11" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//P5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="P9" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM2/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM4" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT11/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM5" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT12/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM6" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT13/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="TIMER1" objType="TIMER" objTypeID="40" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool" mandatory="false" />
+        <rSIInPort name="Reset" signalType="Bool" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Reset" value="False" paramType="System.Boolean" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Time" value="2" paramType="System.Double" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="GREATER1" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TIMER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SOURCE1" objType="SOURCE" objTypeID="45" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Type" value="Const" paramType="KUKA.RSIVisual.RSI_SourceType" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="1" />
+        <rSIParameter name="Offset" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="Amplitude" value="1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="Period" value="5" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="4" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH1" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="ABS1" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="GREATER2" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="0.25" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH2" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH3" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM6/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="ABS2" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH2/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="GREATER3" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="0.25" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="ABS3" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH3/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="GREATER4" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="0.25" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH4" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH5" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH6" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="POSCORRMON1" objType="POSCORRMON" objTypeID="81" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="X" />
+        <rSIOutPort name="Y" />
+        <rSIOutPort name="Z" />
+        <rSIOutPort name="A" />
+        <rSIOutPort name="B" />
+        <rSIOutPort name="C" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="MaxTrans" value="3000" paramType="System.Double" minVal="0" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="MaxRotAngle" value="180" paramType="System.Double" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MONITOR1" objType="MONITOR" objTypeID="55" maxInputs="24" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT14/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT15/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT16/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+        <rSIInPort name="In5" mandatory="false" />
+        <rSIInPort name="In6" mandatory="false" />
+        <rSIInPort name="In7" mandatory="false" />
+      </rSIInPorts>
+      <rSIParameters>
+        <rSIParameter name="Refresh" value="1" paramType="System.Int32" minVal="1" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Timeout" value="50" paramType="System.Int32" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="ReqTimeZero" value="1" paramType="System.Int32" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="IP" value="192.168.0.1" paramType="System.IP" minVal="-2147483648" maxVal="2147483647" isEnum="false" isRuntime="false" index="1" />
+        <rSIParameter name="Channel" value="1" paramType="System.Int32" minVal="1" maxVal="8" isEnum="false" isRuntime="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MONITOR2" objType="MONITOR" objTypeID="55" maxInputs="24" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM6/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SUM5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SUM4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In5" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In6" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In7" mandatory="false" />
+      </rSIInPorts>
+      <rSIParameters>
+        <rSIParameter name="Refresh" value="1" paramType="System.Int32" minVal="1" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Timeout" value="50" paramType="System.Int32" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="ReqTimeZero" value="1" paramType="System.Int32" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="IP" value="192.168.0.1" paramType="System.IP" minVal="-2147483648" maxVal="2147483647" isEnum="false" isRuntime="false" index="1" />
+        <rSIParameter name="Channel" value="2" paramType="System.Int32" minVal="1" maxVal="8" isEnum="false" isRuntime="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="TRAFO_ROBFRAME1" objType="TRAFO_ROBFRAME" objTypeID="66" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA7/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+        <rSIOutPort name="Out3" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Type" value="OnlyRot" paramType="KUKA.RSIVisual.RSI_TrafoType" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="1" />
+        <rSIParameter name="Source" value="Base" paramType="KUKA.RSIVisual.RSI_TrafoCosys" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+        <rSIParameter name="Target" value="Tool" paramType="KUKA.RSIVisual.RSI_TrafoCosys" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="3" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SOURCE2" objType="SOURCE" objTypeID="45" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Type" value="Const" paramType="KUKA.RSIVisual.RSI_SourceType" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="1" />
+        <rSIParameter name="Offset" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="Amplitude" value="1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="Period" value="5" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="4" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P4" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA4/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P5" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA5/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P6" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA6/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MULTI1" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out2" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//P6/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="MULTI2" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//P4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out3" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="MULTI3" objType="MULTI" objTypeID="42" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out2" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SUM1" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//MULTI8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//MULTI2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM2" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//MULTI11/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//MULTI3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM3" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//MULTI5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//MULTI1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT14" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH4/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT15" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH5/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT16" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH6/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MONITOR3" objType="MONITOR" objTypeID="55" maxInputs="24" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out2" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out3" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIParameters>
+        <rSIParameter name="Refresh" value="1" paramType="System.Int32" minVal="1" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Timeout" value="50" paramType="System.Int32" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="ReqTimeZero" value="1" paramType="System.Int32" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="IP" value="192.168.0.1" paramType="System.IP" minVal="-2147483648" maxVal="2147483647" isEnum="false" isRuntime="false" index="1" />
+        <rSIParameter name="Channel" value="3" paramType="System.Int32" minVal="1" maxVal="8" isEnum="false" isRuntime="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="POSCORR1" objType="POSCORR" objTypeID="27" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="CorrX" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT110/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="CorrY" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT111/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="CorrZ" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT112/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="CorrA" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT16/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="CorrB" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT15/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="CorrC" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT14/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Stat" signalType="Int" />
+        <rSIOutPort name="X" />
+        <rSIOutPort name="Y" />
+        <rSIOutPort name="Z" />
+        <rSIOutPort name="A" />
+        <rSIOutPort name="B" />
+        <rSIOutPort name="C" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="LowerLimX" value="-1500" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="LowerLimY" value="-1500" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="LowerLimZ" value="-1500" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="UpperLimX" value="1500" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="4" />
+        <rSIParameter name="UpperLimY" value="1500" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="5" />
+        <rSIParameter name="UpperLimZ" value="1250" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="6" />
+        <rSIParameter name="MaxRotAngle" value="180" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="7" />
+        <rSIParameter name="LastCorrStat" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="8" />
+        <rSIParameter name="LastCorrX" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="9" />
+        <rSIParameter name="LastCorrY" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="10" />
+        <rSIParameter name="LastCorrZ" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="11" />
+        <rSIParameter name="LastCorrA" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="12" />
+        <rSIParameter name="LastCorrB" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="13" />
+        <rSIParameter name="LastCorrC" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="14" />
+        <rSIParameter name="RefCorrSys" value="Tool" paramType="KUKA.RSIVisual.RSI_TrafoCosys" minVal="-2147483648" maxVal="2147483647" isEnum="true" isRuntime="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="DIGIN4" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="65" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="DIGIN5" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="69" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="DIGIN6" objType="DIGIN" objTypeID="29" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Int" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="73" paramType="System.Int32" minVal="1" maxVal="4096" isEnum="false" index="1" />
+        <rSIParameter name="DataSize" value="DWord" paramType="KUKA.RSIVisual.RSI_DataSize" minVal="-2147483648" maxVal="2147483647" isEnum="true" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT17" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN4/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT18" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN5/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT19" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//DIGIN6/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.001" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.2" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA8" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="1" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA9" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="2" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SEN_PREA10" objType="SEN_PREA" objTypeID="58" maxInputs="0" maxOutputs="0">
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="Index" value="3" paramType="System.Int32" minVal="1" maxVal="20" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM7" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT17/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM8" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT18/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P2/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SUM9" objType="SUM" objTypeID="31" maxInputs="5" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT19/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SEN_PREA10/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//P3/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="cVal" value="0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P1" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P2" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out2" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="P3" objType="P" objTypeID="28" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//TRAFO_ROBFRAME1/Out3" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="-1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH7" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH8" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH9" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER1/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SUM9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="ABS4" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH7/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="ABS5" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH8/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="ABS6" objType="ABS" objTypeID="48" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH9/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="GREATER5" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS4/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="GREATER6" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="GREATER7" objType="GREATER" objTypeID="6" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//ABS6/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false" />
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" signalType="Bool" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="CompVal" value="1.5" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Hysteresis" value="0.0" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH10" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER5/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH11" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER6/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="SIGNALSWITCH12" objType="SIGNALSWITCH" objTypeID="59" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="Ctrl" signalType="Bool">
+          <source>
+            <rSIOutPortMoniker name="//GREATER7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2">
+          <source>
+            <rSIOutPortMoniker name="//SOURCE1/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+        <rSIOutPort name="Out2" />
+      </rSIOutPorts>
+    </rSIElement>
+    <rSIElement name="PT110" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH10/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT111" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH11/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="PT112" objType="PT1" objTypeID="37" maxInputs="0" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//SIGNALSWITCH12/Out1" />
+          </source>
+        </rSIInPort>
+      </rSIInPorts>
+      <rSIOutPorts>
+        <rSIOutPort name="Out1" />
+      </rSIOutPorts>
+      <rSIParameters>
+        <rSIParameter name="KR" value="0.01" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="T1" value="0.1" paramType="System.Double" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+    <rSIElement name="MONITOR4" objType="MONITOR" objTypeID="55" maxInputs="24" maxOutputs="0">
+      <rSIInPorts>
+        <rSIInPort name="In1">
+          <source>
+            <rSIOutPortMoniker name="//PT110/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In2" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT111/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In3" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//PT112/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In4" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SUM7/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In5" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SUM8/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In6" mandatory="false">
+          <source>
+            <rSIOutPortMoniker name="//SUM9/Out1" />
+          </source>
+        </rSIInPort>
+        <rSIInPort name="In7" mandatory="false" />
+      </rSIInPorts>
+      <rSIParameters>
+        <rSIParameter name="Refresh" value="1" paramType="System.Int32" minVal="1" maxVal="2147483647" isEnum="false" index="1" />
+        <rSIParameter name="Timeout" value="50" paramType="System.Int32" minVal="0" maxVal="2147483647" isEnum="false" index="2" />
+        <rSIParameter name="ReqTimeZero" value="1" paramType="System.Int32" minVal="-2147483648" maxVal="2147483647" isEnum="false" index="3" />
+        <rSIParameter name="IP" value="192.168.0.1" paramType="System.IP" minVal="-2147483648" maxVal="2147483647" isEnum="false" isRuntime="false" index="1" />
+        <rSIParameter name="Channel" value="4" paramType="System.Int32" minVal="1" maxVal="8" isEnum="false" isRuntime="false" index="2" />
+      </rSIParameters>
+    </rSIElement>
+  </rSIObjects>
+</rSIModel>
