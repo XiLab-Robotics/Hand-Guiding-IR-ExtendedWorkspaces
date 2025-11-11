@@ -1,0 +1,61 @@
+&ACCESS RVO
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF HandGuiding_v4( )
+
+DECL INT ret	; Return value for RSI commands
+DECL INT CONTID	; ContainerID
+
+GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+INTERRUPT ON 3 
+BAS (#INITMOV,0 )
+
+; Move to start pose
+PTP {A1 0, A2 -90, A3 90, A4 0, A5 90, A6 0}
+
+; Base in actual pose
+$BASE.X=$POS_ACT.X
+$BASE.Y=$POS_ACT.Y
+$BASE.Z=$POS_ACT.Z
+$BASE.A=$POS_ACT.A
+$BASE.B=$POS_ACT.B
+$BASE.C=$POS_ACT.C
+
+; Transfer values to RSI
+$SEN_PREA[1]=-myF0[1]
+$SEN_PREA[2]=-myF0[2]
+$SEN_PREA[3]=-myF0[3]
+$SEN_PREA[4]=-myM0[1]
+$SEN_PREA[5]=-myM0[2]
+$SEN_PREA[6]=-myM0[3]
+$SEN_PREA[7]=TOOL_WEIGHT
+$SEN_PREA[8]=POS_CG[1]
+$SEN_PREA[9]=POS_CG[2]
+$SEN_PREA[10]=POS_CG[3]
+
+; Create RSI Context
+ret=RSI_CREATE("HandGuiding_v4b.rsi",CONTID)
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+; Start RSI execution
+ret=RSI_ON(#RELATIVE,#IPO_FAST)
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+; Sensor guided movement
+RSI_MOVECORR()
+
+
+; Turn off RSI
+ret=RSI_OFF()
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+; Move back to start pose
+PTP {A1 0, A2 -90, A3 90, A4 0, A5 90, A6 0}
+
+END
