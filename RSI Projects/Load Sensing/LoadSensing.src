@@ -1,0 +1,151 @@
+&ACCESS RVO4
+&REL 3
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF CenterOfMass_EVAL( )
+   
+   ;FOLD Declarations
+      DECL INT ret	; Return value for RSI commands
+      DECL INT CONTID	; ContainerID
+     
+      ; Values measured at Pose 1      
+      DECL REAL Fz_0  
+      DECL REAL Fx_P1
+      DECL REAL Mx_0
+      DECL REAL My_P1
+      DECL REAL Mz_P1
+      
+    ; Values measured at Pose 2      
+      DECL REAL Fy_0  
+      DECL REAL Fz_P2
+      DECL REAL Mx_P2
+      DECL REAL My_P2
+      DECL REAL Mz_0
+      
+    ; Values measured at Pose 2      
+      DECL REAL Fx_0  
+      DECL REAL Fy_P3
+      DECL REAL Mx_P3
+      DECL REAL My_0
+      DECL REAL Mz_P3
+
+      
+
+   GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+   INTERRUPT ON 3 
+     
+   BAS (#INITMOV,0 )
+
+   ; BCO
+   PTP $AXIS_ACT
+   
+   ; Set active TCP
+   BAS(#TOOL, 2)
+   
+   ; Set speed at 50%
+   BAS(#VEL_PTP, 50)
+   
+
+   ; Move to Pose 1
+   PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
+   
+   ; Stabilize
+   WAIT SEC 2
+   
+   ; Create RSI Context
+   ret=RSI_CREATE("signalmeanvalue.rsi",CONTID)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Start RSI execution
+   ret=RSI_ON(#ABSOLUTE)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Measurement (gravity in X+ [F/T sensor frame])
+   WAIT SEC 5
+   Fx_P1=$SEN_PREA[1]
+   Fz_0=$SEN_PREA[3]
+   Mx_0=$SEN_PREA[4]
+   My_P1=$SEN_PREA[5]
+   Mz_P1=$SEN_PREA[6]
+
+   ; Turn off RSI
+   ret=RSI_OFF()
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Move to Pose 2
+   PTP {A1 0, A2 -90, A3 90, A4 0, A5 90, A6 0}
+   
+   ; Stabilize
+   WAIT SEC 2
+   
+   ; Start RSI execution
+   ret=RSI_ON(#ABSOLUTE)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Measurement (gravity in Z+ [F/T sensor frame])
+   WAIT SEC 5
+   Fy_0=$SEN_PREA[2]
+   Fz_P2=$SEN_PREA[3]
+   Mx_P2=$SEN_PREA[4]
+   My_P2=$SEN_PREA[5]
+   Mz_0=$SEN_PREA[6]
+
+   ; Turn off RSI
+   ret=RSI_OFF()
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Move to Pose 3
+   PTP {A1 0, A2 -90, A3 90, A4 90, A5 90, A6 0}
+   
+   ; Stabilize
+   WAIT SEC 2
+   
+   ; Start RSI execution
+   ret=RSI_ON(#ABSOLUTE)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Measurement (gravity in Y+ [F/T sensor frame])
+   WAIT SEC 5
+   Fx_0=$SEN_PREA[1]
+   Fy_P3=$SEN_PREA[2]
+   Mx_P3=$SEN_PREA[4]
+   My_0=$SEN_PREA[5]
+   Mz_P3=$SEN_PREA[6]
+   
+   ; Turn off RSI
+   ret=RSI_OFF()
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   
+   ; Evaluate tool weight and CoG (results written on global vars)
+   TOOL_WEIGHT=(ABS(Fx_P1-Fx_0)+ABS(Fy_P3-Fy_0)+ABS(Fz_P2-Fz_0))/3
+   
+   POS_CG[1]=((My_P2-My_0)+(Mz_P3-Mz_0))/(2*TOOL_WEIGHT) 
+   POS_CG[2]=((Mz_P1-Mz_0)+(Mx_P2-Mx_0))/(2*TOOL_WEIGHT)
+   POS_CG[3]=((My_P1-My_0)+(Mx_P3-Mx_0))/(2*TOOL_WEIGHT)
+   
+   myF0[1]=Fx_0
+   myF0[2]=Fy_0
+   myF0[3]=Fz_0
+   myM0[1]=Mx_0
+   myM0[2]=My_0
+   myM0[3]=Mz_0
+   
+   ; Move back to Home Pose
+   PTP {A1 0, A2 -130, A3 130, A4 0, A5 90, A6 0}
+   
+END
