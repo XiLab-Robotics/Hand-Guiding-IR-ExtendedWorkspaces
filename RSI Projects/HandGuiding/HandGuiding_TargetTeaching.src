@@ -1,0 +1,84 @@
+&ACCESS RVO
+&REL 1
+&PARAM DISKPATH = KRC:\R1\Program\ForceTorqueSensor
+DEF HandGuide_record_pt ( )   
+   DECL INT counter
+   
+ 
+   GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+   INTERRUPT ON 3 
+   BAS (#INITMOV,0 )
+
+   PTP $AXIS_ACT
+   
+   ; Base in actual position
+   $BASE.X=$POS_ACT.X
+   $BASE.Y=$POS_ACT.Y
+   $BASE.Z=$POS_ACT.Z
+   $BASE.A=$POS_ACT.A
+   $BASE.B=$POS_ACT.B
+   $BASE.C=$POS_ACT.C
+   
+   ; 0 Values Initialization
+   $SEN_PREA[1]=-myF0[1]
+   $SEN_PREA[2]=-myF0[2]
+   $SEN_PREA[3]=-myF0[3]
+   $SEN_PREA[4]=-myM0[1]
+   $SEN_PREA[5]=-myM0[2]
+   $SEN_PREA[6]=-myM0[3]
+   $SEN_PREA[7]=TOOL_WEIGHT
+   $SEN_PREA[8]=POS_CG[1]
+   $SEN_PREA[9]=POS_CG[2]
+   $SEN_PREA[10]=POS_CG[3]
+   
+   ; Sensor guided movement
+   counter = 0
+   REPEAT
+      counter = counter + 1
+      StartHG()
+      WAIT FOR $IN[4]
+      myPos[counter].X = $POS_ACT.X
+      myPos[counter].Y = $POS_ACT.Y
+      myPos[counter].Z = $POS_ACT.Z
+      myPos[counter].A = $POS_ACT.A
+      myPos[counter].B = $POS_ACT.B
+      myPos[counter].C = $POS_ACT.C
+      myPos[counter].S = $POS_ACT.S
+      myPos[counter].T = $POS_ACT.T
+      
+      ; Or via SEN_PREA if taken from RSI block (POS_ACT)
+      
+      WAIT FOR NOT($IN[4])
+   UNTIL (counter == n_measures )
+   
+   ; Move back to start position
+   PTP {A1 0, A2 -130, A3 130, A4 0, A5 90, A6 0}
+   
+END
+
+
+
+DEF StartHG()
+
+   DECL INT ret	; Return value for RSI commands
+   DECL INT CONTID	; ContainerID
+   
+   ret=RSI_CREATE("HandGuiding_record_pt.rsi",CONTID)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   ; Start RSI execution
+   ret=RSI_ON(#RELATIVE,#IPO_FAST)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   
+   RSI_MOVECORR()
+   
+   ; Turn off RSI
+   ret=RSI_OFF()
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+END

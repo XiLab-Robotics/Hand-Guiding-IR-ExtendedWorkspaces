@@ -1,0 +1,18 @@
+&ACCESS RVO
+DEFDAT  HandGuide_record_pt PUBLIC
+; Settings
+DECL INT n_measures=10
+DECL POS myPos[10]
+
+; Data
+myPos[1]={X 6.39245033,Y -460.911133,Z -13.2861853,A 2.48526049,B -2.33426857,C -0.999733686,S 18,T 11}
+myPos[2]={X 37.2615929,Y -553.389160,Z 457.148346,A 1.72387600,B -1.16733873,C 0.449589849,S 18,T 3}
+myPos[3]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[4]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[5]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[6]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[7]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[8]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[9]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+myPos[10]={X 0.0,Y 0.0,Z 0.0,A 0.0,B 0.0,C 0.0,S 0,T 0}
+ENDDAT
