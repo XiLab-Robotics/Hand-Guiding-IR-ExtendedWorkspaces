@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSIObjects xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/RSIContext.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN1">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="77" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN2">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="81" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN3">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="85" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA1">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="4" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA2">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA3">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="6" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA4">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="8" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA5">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="9" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA6">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA7">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="7" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT11">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT12">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT13">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA5" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="3" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA6" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI11">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P5" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT11" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P7" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT12" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA2" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P8" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT13" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA3" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P9" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="TIMER" ObjTypeID="40" ObjID="TIMER1">
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" />
+      <Parameter Name="Time" ParamID="2" ParamValue="2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TIMER1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.0" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE1">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM4" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.25" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM5" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM6" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH2" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.25" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH3" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.25" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER3" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH2" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER4" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH3" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="POSCORRMON" ObjTypeID="81" ObjID="POSCORRMON1">
+    <Parameters>
+      <Parameter Name="MaxTrans" ParamID="1" ParamValue="3000" />
+      <Parameter Name="MaxRotAngle" ParamID="2" ParamValue="180" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT14" OutIdx="1" />
+      <Input InIdx="2" OutObjID="PT15" OutIdx="1" />
+      <Input InIdx="3" OutObjID="PT16" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="50" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="1" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM6" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM5" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SUM4" OutIdx="1" />
+      <Input InIdx="4" OutObjID="P9" OutIdx="1" />
+      <Input InIdx="5" OutObjID="P8" OutIdx="1" />
+      <Input InIdx="6" OutObjID="P7" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="50" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="2" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="TRAFO_ROBFRAME" ObjTypeID="66" ObjID="TRAFO_ROBFRAME1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SOURCE2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE2" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SEN_PREA7" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="1" />
+      <Parameter Name="Source" ParamID="2" ParamValue="1" />
+      <Parameter Name="Target" ParamID="3" ParamValue="3" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE2">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA4" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA5" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA6" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TRAFO_ROBFRAME1" OutIdx="2" />
+      <Input InIdx="2" OutObjID="P6" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P4" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="3" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SEN_PREA4" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="2" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="MULTI8" OutIdx="1" />
+      <Input InIdx="2" OutObjID="MULTI2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="MULTI11" OutIdx="1" />
+      <Input InIdx="2" OutObjID="MULTI3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="MULTI5" OutIdx="1" />
+      <Input InIdx="2" OutObjID="MULTI1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT14">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH4" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT15">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH5" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT16">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH6" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TRAFO_ROBFRAME1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="TRAFO_ROBFRAME1" OutIdx="2" />
+      <Input InIdx="3" OutObjID="TRAFO_ROBFRAME1" OutIdx="3" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="50" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="3" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="POSCORR" ObjTypeID="27" ObjID="POSCORR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT110" OutIdx="1" />
+      <Input InIdx="2" OutObjID="PT111" OutIdx="1" />
+      <Input InIdx="3" OutObjID="PT112" OutIdx="1" />
+      <Input InIdx="4" OutObjID="PT16" OutIdx="1" />
+      <Input InIdx="5" OutObjID="PT15" OutIdx="1" />
+      <Input InIdx="6" OutObjID="PT14" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimX" ParamID="1" ParamValue="-1500" />
+      <Parameter Name="LowerLimY" ParamID="2" ParamValue="-1500" />
+      <Parameter Name="LowerLimZ" ParamID="3" ParamValue="-1500" />
+      <Parameter Name="UpperLimX" ParamID="4" ParamValue="1500" />
+      <Parameter Name="UpperLimY" ParamID="5" ParamValue="1500" />
+      <Parameter Name="UpperLimZ" ParamID="6" ParamValue="1250" />
+      <Parameter Name="MaxRotAngle" ParamID="7" ParamValue="180" />
+      <Parameter Name="LastCorrStat" ParamID="8" ParamValue="0" />
+      <Parameter Name="LastCorrX" ParamID="9" ParamValue="0" />
+      <Parameter Name="LastCorrY" ParamID="10" ParamValue="0" />
+      <Parameter Name="LastCorrZ" ParamID="11" ParamValue="0" />
+      <Parameter Name="LastCorrA" ParamID="12" ParamValue="0" />
+      <Parameter Name="LastCorrB" ParamID="13" ParamValue="0" />
+      <Parameter Name="LastCorrC" ParamID="14" ParamValue="0" />
+      <Parameter Name="RefCorrSys" ParamID="1" ParamValue="3" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN4">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="65" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN5">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="69" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN6">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="73" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT17">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN4" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT18">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN5" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT19">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN6" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.001" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA8">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA9">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PREA" ObjTypeID="58" ObjID="SEN_PREA10">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="3" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT17" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA8" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT18" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA9" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT19" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SEN_PREA10" OutIdx="1" />
+      <Input InIdx="3" OutObjID="P3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TRAFO_ROBFRAME1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TRAFO_ROBFRAME1" OutIdx="2" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TRAFO_ROBFRAME1" OutIdx="3" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM7" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM8" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM9" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH7" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH8" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="ABS" ObjTypeID="48" ObjID="ABS6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH9" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS4" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS5" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ABS6" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1.5" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH10">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER5" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH7" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH11">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER6" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH8" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH12">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER7" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH9" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT110">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH10" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT111">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH11" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PT1" ObjTypeID="37" ObjID="PT112">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH12" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="T1" ParamID="2" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="PT110" OutIdx="1" />
+      <Input InIdx="2" OutObjID="PT111" OutIdx="1" />
+      <Input InIdx="3" OutObjID="PT112" OutIdx="1" />
+      <Input InIdx="4" OutObjID="SUM7" OutIdx="1" />
+      <Input InIdx="5" OutObjID="SUM8" OutIdx="1" />
+      <Input InIdx="6" OutObjID="SUM9" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="50" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="4" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="POSACT" ObjTypeID="24" ObjID="POSACT1">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="11" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="2" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="12" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="3" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="13" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="4" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="14" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="5" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="15" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PREA" ObjTypeID="17" ObjID="MAP2SEN_PREA6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="6" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="16" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PINT" ObjTypeID="16" ObjID="MAP2SEN_PINT1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="7" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PINT" ObjTypeID="16" ObjID="MAP2SEN_PINT2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSACT1" OutIdx="8" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="2" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN7">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="4" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="STOP" ObjTypeID="18" ObjID="STOP1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN7" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Mode" ParamID="1" ParamValue="4" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+</RSIObjects>
